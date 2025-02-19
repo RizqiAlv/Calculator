@@ -1,0 +1,58 @@
+<script src='https://kit.fontawesome.com/ee7931c9a4.js'></script>
+<link rel="stylesheet" href="kalkulator.css">
+<body background="pastel.jpg">
+  <p align="center" class="name">Copyright &copy;2024 salmaa</p>
+  <div class='container'>
+    <div class='frame'>
+      <div class='inner-frame-1'></div>
+      <div class='inner-frame-2'>
+        <div class='screen'>
+          <div class='top-icon-container'>
+            <i class='fas fa-signal icon' id='wifi'></i>
+            <i class='fas fa-wifi icon'></i>
+            <i class='fas fa-battery-full icon'></i>
+          </div>
+          <div id="calculator">
+            <div class="box">
+            <input type="text" id="result" class="display">
+            </div>
+            <script src="kalkulator.css"></script>
+            <div class="keys">
+              <button class="special" onclick="erase()">AC</button>
+              <button class="special" onclick="singleDelete()">&#9003;</button>
+              <button class="special" onclick="display('%')">%</button>
+              <button class="opr" onclick="display('÷')">÷</button>
+              <br>
+              <button onclick="display('7')">7</button>
+              <button onclick="display('8')">8</button>
+              <button onclick="display('9')">9</button>
+              <button class="opr" onclick="display('x')">x</button>
+              <br>
+              <button onclick="display('4')">4</button>
+              <button onclick="display('5')">5</button>
+              <button onclick="display('6')">6</button>
+              <button class="opr" onclick="display('-')">-</button>
+              <br>
+              <button onclick="display('1')">1</button>
+              <button onclick="display('2')">2</button>
+              <button onclick="display('3')">3</button>
+              <button class="opr" onclick="display('+')">+</button>
+              <br>
+              <button class="zero" onclick="display('0')">0</button>
+              <button onclick="display('.')">.</button>
+              <button class="opr" onclick="solve()">=</button>
+            </div>
+          </div>
+          <a href="kalkulator.html">
+            <div class='bottom-home-bar'></div>
+          </a>
+        </div>
+      </div>
+      <div class='notch'>
+        <div class='speaker'></div>
+        <div class='front-camera'></div>
+     <script src="kalkulator.js"></script>
+      </div>
+    </div>
+  </div>
+</body>
